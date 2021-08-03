@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News sharing</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery-3.6.0.min.js') }}"></script>
+</head>
+<body style="background: white">
+{% block navigation %}
+    {% include "navbar.html" %}
+{% endblock %}
+<br>
+<br>
+<div class="container" style="color: black">
+    <div>
+        <div>{% block content %} {%  endblock %}</div>
+    </div>
+</div>
+<br>
+<br>
+</body>
+</html>
